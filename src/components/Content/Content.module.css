@@ -1,0 +1,305 @@
+.text {
+  padding: 2rem 1.5rem;
+  max-width: 1280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  color: #1a365d;
+  margin-bottom: 1rem;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 4px;
+  background: linear-gradient(90deg, #4299e1, #3182ce);
+  border-radius: 2px;
+}
+
+.intro {
+  font-size: 1.25rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+h2 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  position: relative;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #4299e1;
+}
+
+.recentPostsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.recentPostsItems {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.recentPostsColumn {
+  flex: 1;
+  min-width: 0;
+}
+
+.recentPostsItem {
+  background-color: white;
+  padding: 1.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #e2e8f0;
+}
+
+.recentPostsItem:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.recentPostLink {
+  display: flex;
+  align-items: center;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.4;
+  margin: 0 0 1.25rem 0;
+  color: #2d3748;
+  transition: color 0.3s ease;
+}
+
+.featureIcon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  background: #ebf8ff;
+  padding: 0.5rem;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3182ce;
+}
+
+.featureContent {
+  color: #4a5568;
+  line-height: 1.7;
+}
+
+.featureContent p {
+  margin-bottom: 0.75rem;
+}
+
+.featureContent p:last-child {
+  margin-bottom: 0;
+}
+
+.benefitsSection {
+  padding: 2rem;
+  background-color: #f7fafc;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.benefitsTitle {
+  font-size: 1.75rem;
+  color: #2d3748;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.benefitsTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #4299e1;
+}
+
+.benefitsList {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  padding: 1.25rem;
+  background: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  border-left: 4px solid #4299e1;
+}
+
+.benefitItem:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.benefitIcon {
+  font-size: 1.5rem;
+  margin-right: 1.25rem;
+  flex-shrink: 0;
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ebf8ff;
+  border-radius: 50%;
+  color: #3182ce;
+}
+
+.benefitText {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.solutionWrapper {
+  background: linear-gradient(135deg, #ebf8ff, #bee3f8);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  border: 1px solid #bee3f8;
+}
+
+.solution {
+  font-size: 1.25rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+  color: #2d3748;
+  line-height: 1.7;
+  position: relative;
+}
+
+.solutionHighlight {
+  font-weight: 700;
+  color: #3182ce;
+}
+
+.ctaSection {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f7fafc;
+  border-radius: 0.75rem;
+}
+
+.ctaTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1a365d;
+  margin-bottom: 1.5rem;
+  background: linear-gradient(90deg, #3182ce, #4299e1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.ctaButton {
+  background-color: rgb(33, 41, 61);
+  color: white;
+  border: none;
+  padding: 0.75rem 4rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(49, 130, 206, 0.2);
+}
+
+.ctaButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(49, 130, 206, 0.3);
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+  .text {
+    padding: 1.5rem 1rem;
+    gap: 1.5rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .intro {
+    font-size: 1.1rem;
+  }
+
+  .recentPostsItems {
+    flex-direction: column;
+  }
+
+  .recentPostsItem {
+    padding: 1.5rem;
+  }
+
+  .recentPostLink {
+    font-size: 1.2rem;
+  }
+
+  .benefitsSection {
+    padding: 1.5rem;
+  }
+
+  .benefitItem {
+    padding: 1rem;
+  }
+
+  .solutionWrapper {
+    padding: 1.5rem;
+  }
+
+  .ctaTitle {
+    font-size: 1.5rem;
+  }
+}
